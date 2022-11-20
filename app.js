@@ -4,7 +4,6 @@ const emailInput = document.querySelector('#email');
 submit.addEventListener('click', () => {
     const email = emailInput.value;
     if (!validateEmail(email)) {
-        console.log('Bullshit email, bitch');
         emailInput.style.borderColor = "hsl(0, 93%, 68%)"
         document.querySelector('.error').style.display = "flex"
         document.querySelector('.error-msg').innerHTML = "Please provide a valid email"
